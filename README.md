@@ -39,3 +39,17 @@ Notes:
 - Replace `public/avatar.jpg` with your portrait; or temporarily use `public/placeholders/avatar.svg`.
 - Project covers live in `public/covers/`. If you don’t have them yet, use `public/placeholders/cover.svg`.
 - Resume PDFs should be placed at `/public/resume-th.pdf` and `/public/resume-en.pdf`, matching paths in `messages/*.json`.
+
+## Documentation
+
+Comprehensive documentation is available for understanding and maintaining this portfolio:
+
+- **[Pages Documentation](./PAGES_DOCUMENTATION.md)** - Complete overview of all pages and functionality
+- **[Technical Documentation](./TECHNICAL_DOCUMENTATION.md)** - Implementation details and architecture
+- **[Individual Page Docs](./docs/)** - Detailed documentation for each page:
+  - [Home Page](./docs/home-page.md) - Main landing page structure
+  - [About Page](./docs/about-page.md) - Personal information showcase
+  - [Projects Page](./docs/projects-page.md) - Interactive project grid
+  - [Project Detail Pages](./docs/project-detail-pages.md) - Individual project showcases
+  - [Contact Page](./docs/contact-page.md) - Contact information display
+  - [Resume Page](./docs/resume-page.md) - PDF resume viewer
