@@ -13,7 +13,7 @@ export const generateStaticParams = () => [{locale:'th'},{locale:'en'}];
 
 export async function generateMetadata({params:{locale}}:{params:{locale:'th'|'en'}}) {
   const baseUrl = 'https://your-domain.com';
-  const messages = (await import(`@/messages/${locale}.json`)).default as any;
+  const messages = (await import(`@/messages/${locale}.json`)).default;
   const title = locale==='th' ? 'พอร์ตโฟลิโอโทนพาสเทลกาแฟ' : 'Coffee-pastel Portfolio';
   const description = messages?.hero?.subtitle ?? 'Minimal, bilingual portfolio';
   const url = `${baseUrl}/${locale}`;
@@ -42,7 +42,7 @@ export async function generateMetadata({params:{locale}}:{params:{locale:'th'|'e
 
 export default async function RootLayout({
   children, params: {locale}
-}: {children: any; params: {locale: 'th'|'en'}}) {
+}: {children: React.ReactNode; params: {locale: 'th'|'en'}}) {
   let messages;
   try {
     messages = (await import(`@/messages/${locale}.json`)).default;

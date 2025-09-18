@@ -56,5 +56,4 @@ export function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-
-export default {};
+// Named exports only - no default export needed
