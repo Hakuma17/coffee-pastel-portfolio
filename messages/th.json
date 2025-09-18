@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "name": "ยศพล แสงอินทร์",
+    "role": "นักพัฒนาซอฟต์แวร์",
+    "home": "หน้าแรก",
+    "about": "ประวัติ",
+    "projects": "ผลงาน",
+    "contact": "ติดต่อ",
+    "resume": "เรซูเม่",
+    "socials": [
+      {"label":"GitHub","href":"https://github.com/yourname"},
+      {"label":"LinkedIn","href":"https://linkedin.com/in/yourname"}
+    ]
+  },
+  "hero": {
+    "title": "พอร์ตโฟลิโอโทนพาสเทลกาแฟ — เรียบ งาม มืออาชีพ",
+    "subtitle": "งานออกแบบที่เน้นความอ่านง่าย ความนิ่ง และรายละเอียดเล็กๆ ที่ยกระดับภาพรวม"
+  },
+  "about": {
+    "title": "ประวัติส่วนตัว",
+    "body": "สวัสดี ผมยศพล สนใจ Frontend/Full-stack โทนอุ่นอ่านสบาย โครงการเด่น: Cookbook, Debirun Pop, Money-Memo",
+    "skills": ["React/Next.js","Flutter","Firebase/AWS","UI/UX","TypeScript"],
+    "resume": {
+      "th": "/resume-th.pdf",
+      "en": "/resume-en.pdf"
+    }
+  },
+  "projects": {
+    "title": "ผลงาน",
+    "items": [
+      {
+        "title": "Cookbook App",
+        "slug": "cookbook",
+        "year": "2025",
+        "role": "Flutter + Backend",
+        "summary": "สแกนวัตถุดิบ แจ้งเตือนแพ้อาหาร ดีไซน์ Material 3",
+        "tech": ["Flutter","PHP","MariaDB"],
+        "cover": "/covers/cookbook.jpg",
+        "links": [{"label":"ดูโค้ด","href":"https://github.com/..."}],
+        "gallery": [
+          "/covers/cookbook.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      },
+      {
+        "title": "Debirun Pop",
+        "slug": "debirun-pop",
+        "year": "2025",
+        "role": "Web Game",
+        "summary": "เกมคลิกธีมอวกาศ สกอร์บอร์ด พื้นหลังไดนามิก",
+        "tech": ["HTML","CSS","JS","Express"],
+        "cover": "/covers/debirun.jpg",
+        "gallery": [
+          "/covers/debirun.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      },
+      {
+        "title": "Money-Memo",
+        "slug": "money-memo",
+        "year": "2025",
+        "role": "PWA + Firebase",
+        "summary": "แอพบันทึกรายรับ-รายจ่าย ธีมคาวาอี้พาสเทล Offline",
+        "tech": ["React","Tailwind","Firebase"],
+        "cover": "/covers/moneymemo.jpg",
+        "gallery": [
+          "/covers/moneymemo.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "ติดต่อ & ที่อยู่",
+    "email": "อีเมล: your.email@example.com",
+    "location": "ที่อยู่: คลองหลวง, ปทุมธานี, ประเทศไทย",
+    "mapHref": "https://maps.google.com/?q=Khlong+Luang+Pathum+Thani",
+    "mapCta": "เปิดแผนที่"
+  }
+}

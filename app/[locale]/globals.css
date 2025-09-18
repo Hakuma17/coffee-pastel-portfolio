@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:#FAF6F1; --card:#F1E7DE; --ink:#2B2A28; --coffee:#8C6149; --rose:#D7A9A3;
+}
+
+html.dark {
+  --bg:#1F1A17; --card:#2A231F; --ink:#EFE9E6; --coffee:#C29B84; --rose:#B98E88;
+}
+
+/* จุดลายถั่วกาแฟ (พื้นหลังเบาๆ สำหรับการ์ด) */
+.card-skin {
+  background:
+    radial-gradient(circle at 16px 16px, rgba(0,0,0,0.04) 2px, transparent 3px) 0 0/48px 48px,
+    var(--card);
+}
+
+/* สไตล์ลิงก์ */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Base typography and selection */
+html { font-size: 16px; }
+::selection { background: rgba(215,169,163,0.35); }
+
+/* Global colors via CSS variables (supports dark mode) */
+body { background: var(--bg); color: var(--ink); }
+
+/* Strong, consistent focus styles (WCAG) */
+*:focus { outline: none; }
+*:focus-visible {
+  outline: 3px solid var(--coffee);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+button:focus-visible,
+a:focus-visible { text-decoration: none; }

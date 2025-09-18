@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "name": "Yotphol Saeng-in",
+    "role": "Software Developer",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume",
+    "socials": [
+      {"label":"GitHub","href":"https://github.com/yourname"},
+      {"label":"LinkedIn","href":"https://linkedin.com/in/yourname"}
+    ]
+  },
+  "hero": {
+    "title": "Coffee-pastel, minimal, truly professional.",
+    "subtitle": "Quiet layout, generous spacing, and subtle details that feel premium."
+  },
+  "about": {
+    "title": "About",
+    "body": "Hi, I’m Yotphol. I love Frontend/Full-stack and calm reading experience. Highlights: Cookbook, Debirun Pop, Money-Memo.",
+    "skills": ["React/Next.js","Flutter","Firebase/AWS","UI/UX","TypeScript"],
+    "resume": {
+      "th": "/resume-th.pdf",
+      "en": "/resume-en.pdf"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "Cookbook App",
+        "slug": "cookbook",
+        "year": "2025",
+        "role": "Flutter + Backend",
+        "summary": "Ingredient scan, allergy warnings, Material 3 design.",
+        "tech": ["Flutter","PHP","MariaDB"],
+        "cover": "/covers/cookbook.jpg",
+        "links": [{"label":"Source","href":"https://github.com/..."}],
+        "gallery": [
+          "/covers/cookbook.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      },
+      {
+        "title": "Debirun Pop",
+        "slug": "debirun-pop",
+        "year": "2025",
+        "role": "Web Game",
+        "summary": "Space-themed clicker, scoreboard, dynamic backgrounds.",
+        "tech": ["HTML","CSS","JS","Express"],
+        "cover": "/covers/debirun.png",
+        "gallery": [
+          "/covers/debirun.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      },
+      {
+        "title": "Money-Memo",
+        "slug": "money-memo",
+        "year": "2025",
+        "role": "PWA + Firebase",
+        "summary": "Personal finance app, kawaii pastel theme, offline.",
+        "tech": ["React","Tailwind","Firebase"],
+        "cover": "/covers/moneymemo.jpg",
+        "gallery": [
+          "/covers/moneymemo.jpg",
+          "/placeholders/cover.svg",
+          "/placeholders/cover.svg"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact & Address",
+    "email": "Email: your.email@example.com",
+    "location": "Address: Khlong Luang, Pathum Thani, Thailand",
+    "mapHref": "https://maps.google.com/?q=Khlong+Luang+Pathum+Thani",
+    "mapCta": "Open map"
+  }
+}
