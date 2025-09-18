@@ -7,6 +7,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "resume": "Resume",
+    "docs": "Pages Info",
     "socials": [
       {"label":"GitHub","href":"https://github.com/yourname"},
       {"label":"LinkedIn","href":"https://linkedin.com/in/yourname"}
@@ -79,5 +80,84 @@
     "location": "Address: Khlong Luang, Pathum Thani, Thailand",
     "mapHref": "https://maps.google.com/?q=Khlong+Luang+Pathum+Thani",
     "mapCta": "Open map"
+  },
+  "docs": {
+    "title": "Pages Information",
+    "subtitle": "Documentation for each page of this portfolio project",
+    "pages": [
+      {
+        "name": "Home Page",
+        "path": "/",
+        "description": "The main landing page featuring a hero section with introduction, about summary, projects showcase, and contact information. Serves as an overview of the entire portfolio.",
+        "sections": [
+          "Hero/Intro section with tagline",
+          "About section with skills and resume links", 
+          "Featured projects grid",
+          "Contact information with map link"
+        ]
+      },
+      {
+        "name": "About Page",
+        "path": "/about",
+        "description": "Dedicated page providing detailed information about the developer, including biography, skills, and professional background.",
+        "sections": [
+          "Profile photo and personal introduction",
+          "Skills and technologies expertise",
+          "Links to resume files (both languages)"
+        ]
+      },
+      {
+        "name": "Projects Page", 
+        "path": "/projects",
+        "description": "Complete portfolio showcase with all projects displayed in a grid layout. Includes filtering functionality by technology stack.",
+        "sections": [
+          "Technology filter buttons (ALL, CSS, Express, etc.)",
+          "Project cards with previews and descriptions",
+          "Direct links to individual project details"
+        ]
+      },
+      {
+        "name": "Individual Project Pages",
+        "path": "/projects/[slug]",
+        "description": "Detailed view for each project with comprehensive information, screenshots, and links to source code or live demos.",
+        "sections": [
+          "Project title, role, and year",
+          "Detailed description and summary",
+          "Technology stack used",
+          "Image gallery/screenshots",
+          "External links (source code, live demo, etc.)"
+        ]
+      },
+      {
+        "name": "Resume Page",
+        "path": "/resume", 
+        "description": "PDF viewer displaying the developer's resume with option to download or view in full screen. Supports both Thai and English versions.",
+        "sections": [
+          "Embedded PDF viewer",
+          "Download/open full file button",
+          "Language-appropriate resume display"
+        ]
+      },
+      {
+        "name": "Contact Page",
+        "path": "/contact",
+        "description": "Contact information and location details with integrated map functionality for easy communication and location reference.",
+        "sections": [
+          "Email address contact information",
+          "Physical address/location",
+          "Interactive map link to location"
+        ]
+      }
+    ],
+    "features": [
+      "Bilingual support (Thai/English) with URL-based routing",
+      "Responsive design with mobile-friendly layout",
+      "Coffee-pastel theme with soft shadows and rounded corners",
+      "Sidebar navigation (sticky on desktop, collapsible on mobile)",
+      "Theme toggle functionality",
+      "SEO optimization with JSON-LD structured data",
+      "Dynamic Open Graph image generation",
+      "Accessible design with proper focus states"
+    ]
   }
 }

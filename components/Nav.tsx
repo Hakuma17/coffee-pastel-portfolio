@@ -2,11 +2,11 @@
 import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 import {usePathname} from 'next/navigation';
-import {HomeIcon, AboutIcon, ProjectsIcon, ContactIcon, ResumeIcon, GithubIcon, LinkedInIcon} from './Icons';
+import {HomeIcon, AboutIcon, ProjectsIcon, ContactIcon, ResumeIcon, DocsIcon, GithubIcon, LinkedInIcon} from './Icons';
 
-type Props = { name: string; role: string; home: string; about?: string; projects?: string; contact?: string; resume?: string; socials: {label:string; href:string}[] };
+type Props = { name: string; role: string; home: string; about?: string; projects?: string; contact?: string; resume?: string; docs?: string; socials: {label:string; href:string}[] };
 
-export default function Nav({name, role, home, about, projects, contact, resume, socials}: Props) {
+export default function Nav({name, role, home, about, projects, contact, resume, docs, socials}: Props) {
   const pathname = usePathname();
   const toggleTheme = () => {
     if (typeof document !== 'undefined') {
@@ -36,6 +36,7 @@ export default function Nav({name, role, home, about, projects, contact, resume,
             {href: `${base}/projects`, label: projects ?? 'Projects', Icon: ProjectsIcon},
             {href: `${base}/contact`, label: contact ?? 'Contact', Icon: ContactIcon},
             {href: `${base}/resume`, label: resume ?? 'Resume', Icon: ResumeIcon},
+            {href: `${base}/docs`, label: docs ?? 'Docs', Icon: DocsIcon},
           ];
           return links.map(i => (
             <Link
