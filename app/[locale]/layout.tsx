@@ -78,6 +78,7 @@ export default async function RootLayout({
               projects={navData.projects}
               contact={navData.contact}
               resume={navData.resume}
+              docs={navData.docs}
               socials={navData.socials}
             />
           </aside>

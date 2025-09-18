@@ -41,6 +41,16 @@ export function ResumeIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function DocsIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" width={20} height={20} aria-hidden="true" {...props}>
+      <path fill="currentColor" d="M6 2h12l4 4v14H6z"/>
+      <path fill="#fff" opacity=".7" d="M8 8h8v2H8zm0 4h8v2H8zm0 4h5v2H8z"/>
+      <path fill="#fff" d="M18 2v4h4"/>
+    </svg>
+  );
+}
+
 export function GithubIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" width={18} height={18} aria-hidden="true" {...props}>

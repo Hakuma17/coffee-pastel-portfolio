@@ -1,13 +1,15 @@
 // Types for the known message schema
 export interface SocialLink {label: string; href: string}
 export interface ProjectItem {title:string; slug:string; year:string; role:string; summary:string; tech:string[]; cover?:string; links?: SocialLink[]; gallery?: string[]}
+export interface PageInfo {name:string; path:string; description:string; sections:string[]}
 
 type Messages = {
-  nav: {name:string; role:string; home:string; about:string; projects:string; contact:string; resume:string; socials:SocialLink[]};
+  nav: {name:string; role:string; home:string; about:string; projects:string; contact:string; resume:string; docs:string; socials:SocialLink[]};
   hero: {title:string; subtitle:string};
   about: {title:string; body:string; skills:string[]; resume:{th:string; en:string}};
   projects: {title:string; items: ProjectItem[]};
   contact: {title:string; email:string; location:string; mapHref:string; mapCta:string};
+  docs: {title:string; subtitle:string; pages:PageInfo[]; features:string[]};
 };
 
 async function loadMessages(locale:string): Promise<Messages> {
@@ -25,6 +27,7 @@ export async function tNav(locale:string) {
     projects: m.nav.projects,
     contact: m.nav.contact,
     resume: m.nav.resume,
+    docs: m.nav.docs,
     socials: m.nav.socials
   };
 }
@@ -51,6 +54,16 @@ export async function tHome(locale:string) {
       mapHref: m.contact.mapHref,
       mapCta: m.contact.mapCta
     }
+  };
+}
+
+export async function tDocs(locale:string) {
+  const m = await loadMessages(locale);
+  return {
+    title: m.docs.title,
+    subtitle: m.docs.subtitle,
+    pages: m.docs.pages,
+    features: m.docs.features
   };
 }
 
